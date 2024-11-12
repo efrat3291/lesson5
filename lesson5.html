@@ -8,10 +8,50 @@
 </head>
 <body>
     <label>הכנס שם</label>
-    <input type="button" onclick="f1()" value="סנן לפי שם"></input>
+    <br>
     <input type="text" id="name" >
+    <br>
+    <input type="button" onclick="f1()" value="סנן לפי שם"></input>
 
-    <select ></select>
+    <br>
+    <label>מדינות</label>
+    <br>
+    <select id="countries" onchange="printf2()" ></select>
+
+    <br>
+    <label>הכנס 2 שנים</label>
+    <br>
+    <input type="text" id="year1">
+    <br>
+    <input type="text" id="year2">
+    <br>
+    <input type="button" value="סנן לפי שנים" onclick="f3()">
+
+    <table id="t"></table>
+
+    <div>
+        הוסף מוצר
+        <br>
+        <input type="text" id="title"><label>כותרת</label>
+        <br>
+        <input type="text" id="artist"><label>יוצר</label>
+        <br>
+        <input type="text" id="country"><label>מדינה</label>
+        <br>
+        <input type="text" id="company"><label>חברה</label>
+        <br>
+        <input type="text" id="price"><label>מחיר</label>
+        <br>
+        <input type="text" id="year"><label>שנה</label>
+        <br>
+        <input type="button" value="send" onclick="add()">
+    </div>
+
+    <input type="text" id="remove">
+    <br>
+    <input type="button" value="מחק מוצר" onclick="remove()"></input>
+    <br>
+    
     <script src="cd_array.js"></script>
     <script src="lesson5.js"></script> 
 </body>
